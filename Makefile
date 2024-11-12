@@ -1,6 +1,6 @@
 # Define the report output file
 report/final_report.html: report/final_report.Rmd output_files
-	Rscript -e "rmarkdown::render(here::here('data550_final_proj/report/final_report.Rmd'))"
+	Rscript -e "rmarkdown::render(here::here('report/final_report.Rmd'))"
 
 # Define the output files required for the report
 output_files: output/lung_data_clean.rds output/table1.html output/age_distribution.png output/model_summary.html
