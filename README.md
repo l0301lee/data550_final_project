@@ -38,8 +38,8 @@ install.packages(c("dplyr", "ggplot2", "knitr", "kableExtra", "tableone", "broom
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/l0301lee/lung-cancer-analysis
-   cd lung-cancer-analysis
+   git clone https://github.com/l0301lee/data550_final_project
+   cd data550_final_project
    ```
 
 2. **Install Dependencies**
