@@ -1,0 +1,47 @@
+---
+title: "Lung Cancer Data Analysis"
+author: "June Yun"
+date: "November 2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(here)
+library(htmltools) # For embedding HTML content
+```
+
+```{r, here-i-am, include = FALSE}
+here::i_am(
+  "report/final_report.Rmd"
+)
+```
+
+# Introduction
+
+The dataset titled "Lung Cancer Data" contains information about patients and various factors related to lung cancer. The data includes demographic factors (age, gender), lifestyle factors (smoking habits), symptoms (chest pain, shortness of breath), and the lung cancer status of each patient. The objective of this analysis is to explore these variables to identify potential risk factors for lung cancer, visualize their relationships, and build predictive models to understand the likelihood of lung cancer in patients.
+
+# Descriptive Analysis
+
+```{r descriptive_analysis, echo=FALSE}
+includeHTML(here("output", "table1.html"))
+```
+
+# Figure: Age Distribution
+
+The figure below shows the age distribution of individuals based on their lung cancer status.
+
+```{r age_distribution_plot, echo=FALSE, fig.align='center'}
+knitr::include_graphics(here("output", "age_distribution.png"))
+```
+
+# Predictive Modeling
+
+The table below shows logistic regression results for predicting lung cancer based on patient characteristics.
+
+```{r predictive_modeling, echo=FALSE}
+includeHTML(here("output", "model_summary.html"))
+```
+
+# Conclusion
+
+In this report, we explored the “Lung Cancer Data” to understand potential risk factors associated with lung cancer. The analysis covered data preprocessing, exploratory data analysis, and predictive modeling using logistic regression. Based on the results, factors such as age and smoking appear to be significant predictors of lung cancer risk.
