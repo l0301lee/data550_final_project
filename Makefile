@@ -22,3 +22,7 @@ output/model_summary.html: output/lung_data_clean.rds
 .PHONY: clean
 clean:
 	rm -f output/* && rm -f report/final_report.html
+
+# Install and restore R packages using renv
+install:
+	Rscript -e 'renv::restore()'

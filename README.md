@@ -27,12 +27,30 @@ This project analyzes the "Lung Cancer Data" to identify potential risk factors 
 
 - **R** and the following R packages:
   - `dplyr`, `ggplot2`, `knitr`, `kableExtra`, `tableone`, `broom`, `here`, and `htmltools`.
+- **Docker** (optional): For containerized execution of this project.
 
-To install these packages in R, run:
+To ensure reproducibility, the project uses the `renv` package to manage R package dependencies.
+
 
 ```r
 install.packages(c("dplyr", "ggplot2", "knitr", "kableExtra", "tableone", "broom", "here", "htmltools"))
 ```
+
+## How to Set Up the Environment
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/l0301lee/data550_final_project
+   cd data550_final_project
+   ```
+   
+2. **Install R Package Dependencies**
+   The project uses the `renv` package to ensure reporducibility. To restore the required R packages:
+   ```bash
+   make install
+   ```
+   This will use the `renv.lock` file to recreate the exact R package environment needed to run the project.
+
 
 ## How to Generate the Report
 
