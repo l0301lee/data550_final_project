@@ -26,3 +26,10 @@ clean:
 # Install and restore R packages using renv
 install:
 	Rscript -e 'renv::restore()'
+
+# Define the docker run command
+docker_run:
+	docker run --rm \
+	    -v $(PWD)/report:/project/report \
+	    l0301lee/final
+

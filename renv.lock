@@ -1,10 +1,10 @@
 {
   "R": {
-    "Version": "4.4.0",
+    "Version": "4.4.2",
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://packagemanager.posit.co/cran/latest"
+        "URL": "https://cran.rstudio.com"
       }
     ]
   },
@@ -908,13 +908,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.7",
+      "Version": "1.0.11",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "utils"
       ],
-      "Hash": "397b7b2a265bc5a7a06852524dabae20"
+      "Hash": "47623f66b4e80b3b0587bc5d7b309888"
     },
     "rlang": {
       "Package": "rlang",
@@ -929,7 +929,7 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.26",
+      "Version": "2.29",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -948,7 +948,7 @@
         "xfun",
         "yaml"
       ],
-      "Hash": "9b148e7f95d33aac01f31282d49e4f44"
+      "Hash": "df99277f63d01c34e95e3d2f06a79736"
     },
     "rprojroot": {
       "Package": "rprojroot",

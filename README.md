@@ -51,6 +51,29 @@ install.packages(c("dplyr", "ggplot2", "knitr", "kableExtra", "tableone", "broom
    ```
    This will use the `renv.lock` file to recreate the exact R package environment needed to run the project.
 
+## Docker Image Instructions
+
+1. **Build the Docker Image**
+  To build the Docker image locally:
+  docker build -t <your-dockerhub-username>/<your-project-name> .
+  Alternatively, pull the prebuilt image from DockerHub:
+  docker pull l0301lee/final
+
+2. **Generate the Report**
+  To generate the report, run the following command:
+  
+  make docker_run
+  
+  This command:
+  - Runs the containerized R environment using the Docker image that was pre-built.
+  - Mounts your local `report/` directory to the container.
+  - Generates the report (`final_report.html`) and places it in the `report/` directory.
+
+3. **Link to DockerHub**
+
+  The Docker image is available at:
+  https://hub.docker.com/r/l0301lee/final
+
 
 ## How to Generate the Report
 
